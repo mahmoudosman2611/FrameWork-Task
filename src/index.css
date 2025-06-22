@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-xl: 1280px;
+}
+
+@layer base {
+  span,
+  a {
+    display: inline-block;
+  }
+}
+@layer components {
+  .btn {
+    @apply px-3 py-2 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300 cursor-pointer;
+  }
+  .form-control {
+    @apply w-full px-2 py-1 outline-0 border-2 rounded-md border-gray-400/50 focus:border-[#2C3E50] placeholder:font-semibold
+
+  }
+
+
+}
+
+@utility container {
+  margin-inline: auto;
+}
+
+
+ nav .active {
+      @apply   bg-[#1ABC9C] rounded-md
+  }
+
+
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  content: '';
+  width: 48px;
+  height: 48px;
+  border: 2px solid violet;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  animation: rotation 2s ease-in-out infinite;
+}
+.loader::after {
+  border-color: rgb(241, 0, 241);
+  animation-delay: 1s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  overflow-y: auto;
+}
