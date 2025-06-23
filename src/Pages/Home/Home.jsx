@@ -13,7 +13,7 @@ export default function Home() {
         </div>
         <div className="homeText text-white space-y-5">
           <h2 className="text-4xl capitalize font-bold">START FRAMEWORK</h2>
-            <div className="before:w-20 before:h-1 before:absolute relative before:bg-white before:left-18 before:bottom-3 after:w-20 after:h-1 after:absolute  after:bg-white after:left-49 after:bottom-3 ">
+            <div className="before:w-20 before:h-1 before:absolute relative before:bg-white before:left-19 before:bottom-3 after:w-20 after:h-1 after:absolute  after:bg-white after:left-49 after:bottom-3 ">
               <FontAwesomeIcon icon={solid.faStar} className=" text-xl " />
             </div>
 

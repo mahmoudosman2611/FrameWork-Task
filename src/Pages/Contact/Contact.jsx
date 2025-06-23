@@ -26,7 +26,7 @@ export default function Contact() {
   });
 
   function signup() {
-    console.log("signed up");
+    console.log("Message SENT");
   }
 
   let formik = useFormik({
@@ -47,15 +47,15 @@ export default function Contact() {
         <div className=" flex items-center justify-center flex-col text-center ">
           <div className="homeText text-[#2C3E50] space-y-5">
             <h2 className="lg:text-4xl text-2xl capitalize font-bold">
-              ABOUT COMPONENT
+              CONTACT SECTION
             </h2>
-            <div className="before:w-20 before:h-1 before:absolute relative before:bg-[#2C3E50] before:left-5 lg:before:left-20 before:bottom-3 after:w-20 after:h-1 after:absolute  after:bg-[#2C3E50] lg:after:left-50 after:left-35 after:bottom-3 ">
+            <div className="before:w-20 before:h-1 before:absolute relative before:bg-[#2C3E50] before:left-2 lg:before:left-16 before:bottom-3 after:w-20 after:h-1 after:absolute  after:bg-[#2C3E50] lg:after:left-45 after:left-32 after:bottom-3 ">
               <FontAwesomeIcon icon={solid.faStar} className=" text-xl " />
             </div>
           </div>
         </div>
 
-        <form className="space-y-3 my-4" onSubmit={formik.handleSubmit}>
+        <form className="space-y-5 my-4" onSubmit={formik.handleSubmit}>
           <div className="name">
             <input
               type="text"
